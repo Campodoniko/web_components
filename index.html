@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="post">
+        <h2 id="post-title">Состоялся релиз iOS 17.3 с улучшенной защитой от краж iPhone</h2>
+        <p id="post-content">Среди ключевых нововведений в iOS 17.3 — функция «Защита от краж», предназначенная для усиления безопасности устройств и защиты данных.Пепелац Ньюс
+            После ввода текущего пароля пользователю станет доступно включение новой функции.3DNews
+            В частности, теперь доступна функция совместных плейлистов в Apple Music как в iOS 17.3, так и в macOS 14.3 Sonoma, что позволяет друзьям присоединяться к плейлистам и вносить свой вклад в музыкальное пространство.3DNews
+            Apple также выпустила iOS 15.8.1 и iOS 16.7.5 для тех, кто использует более старые версии iOS. iOS 17.3 приносит сразу несколько новых функций</p>
+        
+    </div>
+
+    <div id="comment">
+        <h3>Комментарии:</h3>
+        <ul id="comment-list">
+            <comment-element text="Что думаете?" font-size="25px" text-color="#ff0000"></comment-element>
+
+        </ul>
+    </div>
+
+    <h1>Ваше мнение никому не интересно, но если очень надо.</h1>
+    <form id="comment-form">
+        <textarea id="comment-input" placeholder="Пиши сюда"></textarea>
+        <button type="submit">Добавить комментарий</button>
+    </form>
+
+    <template id="comment-template">
+    <li>
+        <comment-element class="comment-text"></comment-element>
+        <button class="like-button">Like</button>
+        <button class="reply-button">Ответить</button>
+        <button class="delete-button">Удалить</button>
+    </li>
+</template>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
